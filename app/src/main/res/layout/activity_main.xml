@@ -11,11 +11,11 @@
         android:id="@+id/button2"
         android:layout_width="78dp"
         android:layout_height="60dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="96dp"
         android:text="="
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button11"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/SecondVar" />
 
     <Button
@@ -34,9 +34,10 @@
         android:id="@+id/textView2"
         android:layout_width="107dp"
         android:layout_height="27dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="SecondVariable"
         app:layout_constraintEnd_toEndOf="@+id/FirstVar"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/FirstVar"
         app:layout_constraintTop_toBottomOf="@+id/FirstVar" />
 
@@ -80,7 +81,7 @@
         android:id="@+id/button12"
         android:layout_width="78dp"
         android:layout_height="60dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="16dp"
         android:text="/"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -91,7 +92,7 @@
         android:id="@+id/textView"
         android:layout_width="84dp"
         android:layout_height="21dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:text="FirstVariable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -114,11 +115,12 @@
         android:id="@+id/SecondVar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="0.0"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
