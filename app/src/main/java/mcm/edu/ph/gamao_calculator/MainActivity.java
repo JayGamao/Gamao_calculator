@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText txtVar1, txtVar2;
-    Button btnAdd, btnSubtract, btnMultiply, btnDivide, btnEqual;
+    Button btnAdd, btnSubtract, btnMultiply, btnDivide, btnModulo;
     TextView answer;
 
     double var1,var2;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSubtract = findViewById(R.id.btnSubtract);
         btnMultiply = findViewById(R.id.btnMultiply);
         btnDivide = findViewById(R.id.btnDivide);
-        btnEqual = findViewById(R.id.btnEqual);
+        btnModulo = findViewById(R.id.btnModulo);
 
         txtVar1= findViewById(R.id.FirstVar);
         txtVar2= findViewById(R.id.SecondVar);
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSubtract.setOnClickListener(this);
         btnDivide.setOnClickListener(this);
         btnMultiply.setOnClickListener(this);
-        btnEqual.setOnClickListener(this);
+        btnModulo.setOnClickListener(this);
 
 
 
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 answer.setText(Double.toString(var1/var2));
 
                 break;
-            case R.id.answer:
+            case R.id.btnModulo:
                 answer.setText(Double.toString(var1%var2));
 
                 break;
