@@ -11,38 +11,40 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText txtVar1, txtVar2;
-    Button btnAdd, btnSubtract, btnMultiply, btnDivide, answer;
-    TextView result;
+    Button btnAdd, btnSubtract, btnMultiply, btnDivide, btnEqual;
+    TextView answer;
 
     double var1,var2;
 
 
 
-    @Override {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
         btnAdd = findViewById(R.id.btnAdd);
         btnSubtract = findViewById(R.id.btnSubtract);
         btnMultiply = findViewById(R.id.btnMultiply);
         btnDivide = findViewById(R.id.btnDivide);
-        answer = findViewById(R.id.answer);
+        btnEqual = findViewById(R.id.btnEqual);
 
         txtVar1= findViewById(R.id.FirstVar);
         txtVar2= findViewById(R.id.SecondVar);
 
-        result = findViewById(R.id.Result);
+        answer = findViewById(R.id.answer);
 
         btnAdd.setOnClickListener(this);
         btnSubtract.setOnClickListener(this);
         btnDivide.setOnClickListener(this);
         btnMultiply.setOnClickListener(this);
-        answer.setOnClickListener(this);
+        btnEqual.setOnClickListener(this);
 
 
-    }
 
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+
     }
     @Override
     public void onClick(View v) {
@@ -55,25 +57,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.btnAdd:
-                result.setText(Double.toString(var1+var2));
+                answer.setText(Double.toString(var1+var2));
 
-                break,
+                break;
             case R.id.btnSubtract:
-                result.setText(Double.toString(var1-var2));
+                answer.setText(Double.toString(var1-var2));
 
-                break,
+                break;
             case R.id.btnDivide:
-                result.setText(Double.toString(var1/var2));
+                answer.setText(Double.toString(var1/var2));
 
-                break,
+                break;
             case R.id.answer:
-                result.setText(Double.toString(var1%var2));
+                answer.setText(Double.toString(var1%var2));
 
-                break,
+                break;
             case R.id.btnMultiply:
-                result.setText(Double.toString(var1*var2));
+                answer.setText(Double.toString(var1*var2));
 
-                break,
+                break;
 
         }
 
