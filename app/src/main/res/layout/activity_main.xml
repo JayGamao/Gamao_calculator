@@ -13,9 +13,9 @@
         android:layout_height="60dp"
         android:layout_marginTop="96dp"
         android:text="="
-        app:layout_constraintEnd_toEndOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="@+id/btnMultiply"
         app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/btnSubtract"
         app:layout_constraintTop_toBottomOf="@+id/SecondVar" />
 
     <Button
@@ -23,11 +23,11 @@
         android:layout_width="78dp"
         android:layout_height="60dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/button5"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSubtract"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubtract"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/btnSubtract"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -42,50 +42,50 @@
         app:layout_constraintTop_toBottomOf="@+id/FirstVar" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btnMultiply"
         android:layout_width="78dp"
         android:layout_height="60dp"
         android:text="x"
-        app:layout_constraintBottom_toBottomOf="@+id/button12"
-        app:layout_constraintEnd_toStartOf="@+id/button12"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDivide"
+        app:layout_constraintEnd_toStartOf="@+id/btnDivide"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="@+id/button12"
+        app:layout_constraintStart_toEndOf="@+id/btnSubtract"
+        app:layout_constraintTop_toTopOf="@+id/btnDivide"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnSubtract"
         android:layout_width="78dp"
         android:layout_height="60dp"
         android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/button11"
-        app:layout_constraintEnd_toStartOf="@+id/button11"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMultiply"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiply"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button13"
-        app:layout_constraintTop_toTopOf="@+id/button11"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/btnMultiply"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btnAdd"
         android:layout_width="78dp"
         android:layout_height="60dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/button5"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSubtract"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubtract"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/btnSubtract"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/btnDivide"
         android:layout_width="78dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:text="/"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button11"
+        app:layout_constraintStart_toEndOf="@+id/btnMultiply"
         app:layout_constraintTop_toBottomOf="@+id/SecondVar" />
 
     <TextView
@@ -125,27 +125,27 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/Result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:text="The Result Is "
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/answer"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Answer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/Result"
+        app:layout_constraintTop_toTopOf="@+id/Result"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
