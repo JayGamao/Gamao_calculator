@@ -46,13 +46,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-
-        txtVar1 = findViewById(R.id.FirstVar);
-        txtVar2 = findViewById(R.id.SecondVar);
-        var1 = Double.parseDouble(txtVar1.getText().toString());
-        var2 = Double.parseDouble(txtVar2.getText().toString());
-
-
         // FUNCTIONALITY
         switch (v.getId()) {
             case R.id.btnAdd:
