@@ -90,8 +90,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="84dp"
-        android:layout_height="21dp"
+        android:layout_width="91dp"
+        android:layout_height="0dp"
         android:layout_marginTop="24dp"
         android:text="FirstVariable"
         app:layout_constraintEnd_toEndOf="parent"
